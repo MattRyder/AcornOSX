@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C949C96D156E924D00B03217 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C949C96C156E924D00B03217 /* Cocoa.framework */; };
+		C949C977156E924D00B03217 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C949C975156E924D00B03217 /* InfoPlist.strings */; };
+		C949C97B156E924D00B03217 /* Acorn.m in Sources */ = {isa = PBXBuildFile; fileRef = C949C97A156E924D00B03217 /* Acorn.m */; };
+		C949C983156E924E00B03217 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C949C982156E924E00B03217 /* SenTestingKit.framework */; };
+		C949C984156E924E00B03217 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C949C96C156E924D00B03217 /* Cocoa.framework */; };
+		C949C987156E924E00B03217 /* Acorn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C949C969156E924D00B03217 /* Acorn.framework */; };
+		C949C98D156E924E00B03217 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C949C98B156E924E00B03217 /* InfoPlist.strings */; };
+		C949C990156E924E00B03217 /* AcornTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C949C98F156E924E00B03217 /* AcornTests.m */; };
+		C949C99B156E946A00B03217 /* Song.h in Headers */ = {isa = PBXBuildFile; fileRef = C949C999156E946A00B03217 /* Song.h */; };
+		C949C99C156E946A00B03217 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = C949C99A156E946A00B03217 /* Song.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C949C985156E924E00B03217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C949C95F156E924D00B03217 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C949C968156E924D00B03217;
+			remoteInfo = Acorn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C949C969156E924D00B03217 /* Acorn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Acorn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C949C96C156E924D00B03217 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C949C96F156E924D00B03217 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C949C970156E924D00B03217 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C949C971156E924D00B03217 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C949C974156E924D00B03217 /* Acorn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Acorn-Info.plist"; sourceTree = "<group>"; };
+		C949C976156E924D00B03217 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C949C978156E924D00B03217 /* Acorn-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Acorn-Prefix.pch"; sourceTree = "<group>"; };
+		C949C979156E924D00B03217 /* Acorn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Acorn.h; sourceTree = "<group>"; };
+		C949C97A156E924D00B03217 /* Acorn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Acorn.m; sourceTree = "<group>"; };
+		C949C981156E924E00B03217 /* AcornTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcornTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C949C982156E924E00B03217 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C949C98A156E924E00B03217 /* AcornTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AcornTests-Info.plist"; sourceTree = "<group>"; };
+		C949C98C156E924E00B03217 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C949C98E156E924E00B03217 /* AcornTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcornTests.h; sourceTree = "<group>"; };
+		C949C98F156E924E00B03217 /* AcornTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcornTests.m; sourceTree = "<group>"; };
+		C949C999156E946A00B03217 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		C949C99A156E946A00B03217 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C949C965156E924D00B03217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C949C96D156E924D00B03217 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C949C97D156E924E00B03217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C949C983156E924E00B03217 /* SenTestingKit.framework in Frameworks */,
+				C949C984156E924E00B03217 /* Cocoa.framework in Frameworks */,
+				C949C987156E924E00B03217 /* Acorn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C949C95D156E924D00B03217 = {
+			isa = PBXGroup;
+			children = (
+				C949C972156E924D00B03217 /* Acorn */,
+				C949C988156E924E00B03217 /* AcornTests */,
+				C949C96B156E924D00B03217 /* Frameworks */,
+				C949C96A156E924D00B03217 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C949C96A156E924D00B03217 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C949C969156E924D00B03217 /* Acorn.framework */,
+				C949C981156E924E00B03217 /* AcornTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C949C96B156E924D00B03217 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C949C96C156E924D00B03217 /* Cocoa.framework */,
+				C949C982156E924E00B03217 /* SenTestingKit.framework */,
+				C949C96E156E924D00B03217 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C949C96E156E924D00B03217 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C949C96F156E924D00B03217 /* AppKit.framework */,
+				C949C970156E924D00B03217 /* CoreData.framework */,
+				C949C971156E924D00B03217 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C949C972156E924D00B03217 /* Acorn */ = {
+			isa = PBXGroup;
+			children = (
+				C949C979156E924D00B03217 /* Acorn.h */,
+				C949C97A156E924D00B03217 /* Acorn.m */,
+				C949C999156E946A00B03217 /* Song.h */,
+				C949C99A156E946A00B03217 /* Song.m */,
+				C949C973156E924D00B03217 /* Supporting Files */,
+			);
+			path = Acorn;
+			sourceTree = "<group>";
+		};
+		C949C973156E924D00B03217 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C949C974156E924D00B03217 /* Acorn-Info.plist */,
+				C949C975156E924D00B03217 /* InfoPlist.strings */,
+				C949C978156E924D00B03217 /* Acorn-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C949C988156E924E00B03217 /* AcornTests */ = {
+			isa = PBXGroup;
+			children = (
+				C949C98E156E924E00B03217 /* AcornTests.h */,
+				C949C98F156E924E00B03217 /* AcornTests.m */,
+				C949C989156E924E00B03217 /* Supporting Files */,
+			);
+			path = AcornTests;
+			sourceTree = "<group>";
+		};
+		C949C989156E924E00B03217 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C949C98A156E924E00B03217 /* AcornTests-Info.plist */,
+				C949C98B156E924E00B03217 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C949C966156E924D00B03217 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C949C99B156E946A00B03217 /* Song.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C949C968156E924D00B03217 /* Acorn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C949C993156E924E00B03217 /* Build configuration list for PBXNativeTarget "Acorn" */;
+			buildPhases = (
+				C949C964156E924D00B03217 /* Sources */,
+				C949C965156E924D00B03217 /* Frameworks */,
+				C949C966156E924D00B03217 /* Headers */,
+				C949C967156E924D00B03217 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Acorn;
+			productName = Acorn;
+			productReference = C949C969156E924D00B03217 /* Acorn.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C949C980156E924E00B03217 /* AcornTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C949C996156E924E00B03217 /* Build configuration list for PBXNativeTarget "AcornTests" */;
+			buildPhases = (
+				C949C97C156E924E00B03217 /* Sources */,
+				C949C97D156E924E00B03217 /* Frameworks */,
+				C949C97E156E924E00B03217 /* Resources */,
+				C949C97F156E924E00B03217 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C949C986156E924E00B03217 /* PBXTargetDependency */,
+			);
+			name = AcornTests;
+			productName = AcornTests;
+			productReference = C949C981156E924E00B03217 /* AcornTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C949C95F156E924D00B03217 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C949C962156E924D00B03217 /* Build configuration list for PBXProject "Acorn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C949C95D156E924D00B03217;
+			productRefGroup = C949C96A156E924D00B03217 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C949C968156E924D00B03217 /* Acorn */,
+				C949C980156E924E00B03217 /* AcornTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C949C967156E924D00B03217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C949C977156E924D00B03217 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C949C97E156E924E00B03217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C949C98D156E924E00B03217 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C949C97F156E924E00B03217 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C949C964156E924D00B03217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C949C97B156E924D00B03217 /* Acorn.m in Sources */,
+				C949C99C156E946A00B03217 /* Song.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C949C97C156E924E00B03217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C949C990156E924E00B03217 /* AcornTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C949C986156E924E00B03217 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C949C968156E924D00B03217 /* Acorn */;
+			targetProxy = C949C985156E924E00B03217 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C949C975156E924D00B03217 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C949C976156E924D00B03217 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C949C98B156E924E00B03217 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C949C98C156E924E00B03217 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C949C991156E924E00B03217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C949C992156E924E00B03217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C949C994156E924E00B03217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Acorn/Acorn-Prefix.pch";
+				INFOPLIST_FILE = "Acorn/Acorn-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		C949C995156E924E00B03217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Acorn/Acorn-Prefix.pch";
+				INFOPLIST_FILE = "Acorn/Acorn-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		C949C997156E924E00B03217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Acorn/Acorn-Prefix.pch";
+				INFOPLIST_FILE = "AcornTests/AcornTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C949C998156E924E00B03217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Acorn/Acorn-Prefix.pch";
+				INFOPLIST_FILE = "AcornTests/AcornTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C949C962156E924D00B03217 /* Build configuration list for PBXProject "Acorn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C949C991156E924E00B03217 /* Debug */,
+				C949C992156E924E00B03217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C949C993156E924E00B03217 /* Build configuration list for PBXNativeTarget "Acorn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C949C994156E924E00B03217 /* Debug */,
+				C949C995156E924E00B03217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C949C996156E924E00B03217 /* Build configuration list for PBXNativeTarget "AcornTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C949C997156E924E00B03217 /* Debug */,
+				C949C998156E924E00B03217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C949C95F156E924D00B03217 /* Project object */;
+}
