@@ -19,6 +19,8 @@
 		C949C99C156E946A00B03217 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = C949C99A156E946A00B03217 /* Song.m */; };
 		C95BF147156FB77E00F6DF45 /* Library.h in Headers */ = {isa = PBXBuildFile; fileRef = C95BF145156FB77E00F6DF45 /* Library.h */; };
 		C95BF148156FB77E00F6DF45 /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = C95BF146156FB77E00F6DF45 /* Library.m */; };
+		C983BBF6157296B30028073A /* LibraryParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C983BBF4157296B30028073A /* LibraryParser.h */; };
+		C983BBF7157296B30028073A /* LibraryParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C983BBF5157296B30028073A /* LibraryParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		C949C99A156E946A00B03217 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
 		C95BF145156FB77E00F6DF45 /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
 		C95BF146156FB77E00F6DF45 /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Library.m; sourceTree = "<group>"; };
+		C983BBF4157296B30028073A /* LibraryParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryParser.h; sourceTree = "<group>"; };
+		C983BBF5157296B30028073A /* LibraryParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 				C949C97A156E924D00B03217 /* Acorn.m */,
 				C95BF145156FB77E00F6DF45 /* Library.h */,
 				C95BF146156FB77E00F6DF45 /* Library.m */,
+				C983BBF4157296B30028073A /* LibraryParser.h */,
+				C983BBF5157296B30028073A /* LibraryParser.m */,
 				C949C999156E946A00B03217 /* Song.h */,
 				C949C99A156E946A00B03217 /* Song.m */,
 				C949C973156E924D00B03217 /* Supporting Files */,
@@ -167,6 +173,7 @@
 			files = (
 				C949C99B156E946A00B03217 /* Song.h in Headers */,
 				C95BF147156FB77E00F6DF45 /* Library.h in Headers */,
+				C983BBF6157296B30028073A /* LibraryParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +286,7 @@
 				C949C97B156E924D00B03217 /* Acorn.m in Sources */,
 				C949C99C156E946A00B03217 /* Song.m in Sources */,
 				C95BF148156FB77E00F6DF45 /* Library.m in Sources */,
+				C983BBF7157296B30028073A /* LibraryParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

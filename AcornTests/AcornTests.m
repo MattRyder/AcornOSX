@@ -26,7 +26,8 @@
 
 - (void)testExample
 {
-    //Library *library = [[Library alloc] init];
+    NSURL *url = [NSURL fileURLWithPath:@"/Users/matt/Music/iTunes/iTunes Music Library.xml"];
+    Library *library = [[Library alloc] initWithLibrary:url];
 }
 
 @end

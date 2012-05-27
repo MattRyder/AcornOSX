@@ -12,14 +12,16 @@
 
 @synthesize LibraryLocation = libraryLocation;
 @synthesize Songs = songs;
+@synthesize Parser = parser;
 
--(void) initializeLibrary:(NSString*) libLocation {
-    self.LibraryLocation = libLocation;
-    //TODO:
-    //parser = new Parser(libraryLocation);
+-(id) initWithLibrary:(NSURL*) libLocation {
     
-    //if(libraryLocation != String.Empty)
-    //      parser.parse();
+    if(self = [super init]) {
+        self.LibraryLocation = libLocation;
+        self.Parser = [[LibraryParser alloc] initWithLibrary:libLocation];
+    }
+    
+    return self;
 }
 
 @end

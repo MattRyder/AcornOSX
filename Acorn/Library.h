@@ -7,15 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LibraryParser.h"
 
 @interface Library : NSObject {
+    NSURL *libraryLocation;
     NSMutableArray *songs;
-    NSString *libraryLocation;
+    LibraryParser *parser;
 }
 
-@property (nonatomic, retain) NSString *LibraryLocation;
+@property (nonatomic, retain) NSURL *LibraryLocation;
 @property (nonatomic, retain) NSMutableArray *Songs;
+@property (retain) LibraryParser *Parser;
 
--(void) initializeLibrary:(NSString*) libLocation;
+-(id) initWithLibrary:(NSURL*) libLocation;
 
 @end
