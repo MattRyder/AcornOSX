@@ -35,25 +35,66 @@
     currentStringValue = nil;
     
     if([elementName isEqualToString:@"dict"]) {
-        currentKey = [elementName value];
+        currentKey = elementName;
+        dictCount++;
+        song = [[Song alloc] init];
+        
         return;
+    }
+    
+    if([song.AttributeKeys containsObject:elementName] || [elementName isEqualToString:@"key"]) {
+        currentKey = elementName;
+    }
+    
+    if([elementName isEqualToString:@"integer"] || [elementName isEqualToString:@"string"]
+       || [elementName isEqualToString:@"true"] || [elementName isEqualToString:@"false"]
+       || [elementName isEqualToString:@"date"]) {
+        currentKey = elementName;
     }
 }
 
 //Found Characters inside a node, get them:
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
     
-    if(currentKey) {
+    if(currentKey && dictCount == 3) {
+        
         if(!currentStringValue) {
             currentStringValue = [[NSMutableString alloc] initWithCapacity:256];
         }
+        if(!lastNodeValue) {
+            lastNodeValue = [[NSMutableString alloc] initWithCapacity:256];
+        }
+        
         [currentStringValue appendString:string];
+        
+        //Is it an attribute we're looking for?:
+        if([song.AttributeKeys containsObject:lastNodeValue]) {
+            [song setAttribute:lastNodeValue :string];
+        }
     }
+    lastNodeValue = currentStringValue; //Swap the node over so we remember it
 }
 
 //Hit the end of the element:
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI 
  qualifiedName:(NSString *)qName {
+    
+    if([elementName isEqualToString:@"dict"]) {
+        dictCount--;
+        
+        //Check if we've got a valid song to add:
+        if(([song.SongAttributes count] > 0) && isValidSong) {
+            [self.Songs addObject:song];
+        }
+        isValidSong = true; //Reset valid song flag
+        
+        
+        //We've just left a <dict> element, check if all "Tracks" have been parsed:
+        if ([self.Songs count] > 0 && dictCount < 2) {
+            [self.Parser abortParsing];
+        }
+        return;
+    }
     
 }
 

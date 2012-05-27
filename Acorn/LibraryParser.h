@@ -13,10 +13,11 @@
     NSMutableArray *songs;
     
     NSString *currentKey;
-    NSMutableString *currentStringValue;
+    NSMutableString *lastNodeValue, *currentStringValue;
     
     int dictCount;
     bool isValidSong;
+    Song *song; //Temp buffer for a song object
 }
 
 @property (nonatomic, retain) NSXMLParser *Parser;
