@@ -73,6 +73,11 @@
         
         [currentStringValue appendString:string];
         
+        if([lastNodeValue isEqualToString:@"Kind"] && [string rangeOfString:@"audio"].location == NSNotFound) {
+            isValidSong = false;
+            return;
+        }
+        
         //Is it an attribute we're looking for?:
         if([song.AttributeKeys containsObject:lastNodeValue]) {
             [song setAttribute:lastNodeValue :string];

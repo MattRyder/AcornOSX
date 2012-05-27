@@ -33,8 +33,6 @@
         for (id song in library.Songs) {
             NSLog(@"[%@] %@", [song getAttribute:@"Track ID"], [song getAttribute:@"Name"]);
         }
-        
-        NSLog(@"\nStatistics:\nCount: %@", [library.Songs count]); 
     }
 }
 
