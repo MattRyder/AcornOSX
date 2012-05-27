@@ -14,7 +14,7 @@
 @synthesize Songs = songs;
 @synthesize Parser = parser;
 
--(id) initWithLibrary:(NSURL*) libLocation {
+- (id) initWithLibrary:(NSURL*) libLocation {
     
     if(self = [super init]) {
         self.LibraryLocation = libLocation;
@@ -22,6 +22,12 @@
     }
     
     return self;
+}
+
+- (BOOL) parseLibrary {
+    if((self.Songs = [self.Parser tryParseLibraryXML])) {
+        return true;
+    } else return false;
 }
 
 @end

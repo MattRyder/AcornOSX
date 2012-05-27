@@ -28,6 +28,14 @@
 {
     NSURL *url = [NSURL fileURLWithPath:@"/Users/matt/Music/iTunes/iTunes Music Library.xml"];
     Library *library = [[Library alloc] initWithLibrary:url];
+    
+    if([library parseLibrary]) {
+        for (id song in library.Songs) {
+            NSLog(@"[%@] %@", [song getAttribute:@"Track ID"], [song getAttribute:@"Name"]);
+        }
+        
+        NSLog(@"\nStatistics:\nCount: %@", [library.Songs count]); 
+    }
 }
 
 @end

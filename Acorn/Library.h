@@ -20,5 +20,6 @@
 @property (retain) LibraryParser *Parser;
 
 -(id) initWithLibrary:(NSURL*) libLocation;
+- (BOOL) parseLibrary;
 
 @end

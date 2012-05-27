@@ -24,6 +24,7 @@
 @property (nonatomic, retain) NSMutableArray *Songs;
 
 - (id) initWithLibrary:(NSURL *) libLocation;
+- (NSMutableArray *) tryParseLibraryXML;
 
 //NSXMLParser instance methods:
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI 

@@ -15,16 +15,22 @@
 
 - (id) initWithLibrary:(NSURL *) libLocation {
     
+    isValidSong = true;
+    self.Songs = [[NSMutableArray alloc] initWithCapacity:1024];
+    
     if(self = [super init]) {
         self.Parser = [[NSXMLParser alloc] initWithContentsOfURL:libLocation];
         [self.Parser setDelegate:self];
-        
-        if([self.Parser parse]) {
-            NSLog(@"Parse Complete!\n");
-        }
     }
     
     return self;
+}
+
+- (NSMutableArray *) tryParseLibraryXML {
+    if([self.Parser parse] && self.Songs)
+        return self.Songs;
+    else
+        return NULL;
 }
 
 //Entered an XML Element Node:
@@ -70,7 +76,7 @@
         //Is it an attribute we're looking for?:
         if([song.AttributeKeys containsObject:lastNodeValue]) {
             [song setAttribute:lastNodeValue :string];
-        }
+        } 
     }
     lastNodeValue = currentStringValue; //Swap the node over so we remember it
 }
