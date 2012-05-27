@@ -3,7 +3,7 @@
 //  Acorn
 //
 //  Created by Matt Ryder on 24/05/2012.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Matt Ryder. All rights reserved.
 //
 
 #import "Song.h"
@@ -23,16 +23,16 @@
                        @"Sample Rate", @"Comments", @"Skip Count", @"Skip Date", @"Persistent ID", 
                        @"Location", nil];
         
-        _songAttributes = [[NSMutableDictionary alloc] init];
+        self.SongAttributes = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
 
-- (void) setAttribute: (NSString *) attributeKey: (NSString *)attributeValue {
+- (void) setAttribute: (NSString *)attributeKey: (NSString *)attributeValue {
     [self.SongAttributes setObject:attributeValue forKey:attributeKey];
 }
 
-- (NSObject *) getAttribute:(NSString *) attributeKey {
+- (NSObject *) getAttribute: (NSString *)attributeKey {
     return [self.SongAttributes objectForKey:attributeKey];
 }
 

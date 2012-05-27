@@ -3,7 +3,7 @@
 //  Acorn
 //
 //  Created by Matt Ryder on 24/05/2012.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Matt Ryder. All rights reserved.
 //
 
 #import "Acorn.h"

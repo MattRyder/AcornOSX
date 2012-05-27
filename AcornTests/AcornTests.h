@@ -7,7 +7,8 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-#import "Acorn.h"
+#import "Song.h"
+#import "Library.h"
 
 @interface AcornTests : SenTestCase
 

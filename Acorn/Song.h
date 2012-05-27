@@ -3,7 +3,7 @@
 //  Acorn
 //
 //  Created by Matt Ryder on 24/05/2012.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Matt Ryder. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,8 +16,9 @@
 @property(nonatomic, readonly) NSArray *AttributeKeys;
 @property(nonatomic, retain) NSMutableDictionary *SongAttributes;
 
--(void) setAttribute: (NSString *) attributeKey: (NSString *)attributeValue;
--(NSObject *) getAttribute:(NSString *) attributeKey;
+//Helper methods for accessing or adding an attribute
+-(void) setAttribute:(NSString *)attributeKey: (NSString *)attributeValue;
+-(NSObject *) getAttribute: (NSString *)attributeKey;
 
 @end
 
