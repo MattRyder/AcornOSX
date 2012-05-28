@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface Song : NSObject {
-    NSArray *_attributeKeys;
-    NSMutableDictionary *_songAttributes;
+    NSArray *attributeKeys;
+    NSMutableDictionary *songAttributes;
 }
 
 @property(nonatomic, readonly) NSArray *AttributeKeys;

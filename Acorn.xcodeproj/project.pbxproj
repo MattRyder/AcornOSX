@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C949C96D156E924D00B03217 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C949C96C156E924D00B03217 /* Cocoa.framework */; };
 		C949C977156E924D00B03217 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C949C975156E924D00B03217 /* InfoPlist.strings */; };
-		C949C97B156E924D00B03217 /* Acorn.m in Sources */ = {isa = PBXBuildFile; fileRef = C949C97A156E924D00B03217 /* Acorn.m */; };
 		C949C983156E924E00B03217 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C949C982156E924E00B03217 /* SenTestingKit.framework */; };
 		C949C984156E924E00B03217 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C949C96C156E924D00B03217 /* Cocoa.framework */; };
 		C949C987156E924E00B03217 /* Acorn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C949C969156E924D00B03217 /* Acorn.framework */; };
@@ -42,8 +41,6 @@
 		C949C974156E924D00B03217 /* Acorn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Acorn-Info.plist"; sourceTree = "<group>"; };
 		C949C976156E924D00B03217 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C949C978156E924D00B03217 /* Acorn-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Acorn-Prefix.pch"; sourceTree = "<group>"; };
-		C949C979156E924D00B03217 /* Acorn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Acorn.h; sourceTree = "<group>"; };
-		C949C97A156E924D00B03217 /* Acorn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Acorn.m; sourceTree = "<group>"; };
 		C949C981156E924E00B03217 /* AcornTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcornTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C949C982156E924E00B03217 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		C949C98A156E924E00B03217 /* AcornTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AcornTests-Info.plist"; sourceTree = "<group>"; };
@@ -122,8 +119,6 @@
 		C949C972156E924D00B03217 /* Acorn */ = {
 			isa = PBXGroup;
 			children = (
-				C949C979156E924D00B03217 /* Acorn.h */,
-				C949C97A156E924D00B03217 /* Acorn.m */,
 				C95BF145156FB77E00F6DF45 /* Library.h */,
 				C95BF146156FB77E00F6DF45 /* Library.m */,
 				C983BBF4157296B30028073A /* LibraryParser.h */,
@@ -283,7 +278,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C949C97B156E924D00B03217 /* Acorn.m in Sources */,
 				C949C99C156E946A00B03217 /* Song.m in Sources */,
 				C95BF148156FB77E00F6DF45 /* Library.m in Sources */,
 				C983BBF7157296B30028073A /* LibraryParser.m in Sources */,

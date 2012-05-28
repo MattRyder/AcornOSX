@@ -24,14 +24,39 @@
     [super tearDown];
 }
 
-- (void)testExample
+//
+//Given a valid Library XML location, -parseLibrary should return YES to pass
+//
+- (void)testLocationValid
 {
     NSURL *url = [NSURL fileURLWithPath:@"/Users/matt/Music/iTunes/iTunes Music Library.xml"];
     Library *library = [[Library alloc] initWithLibrary:url];
     
-    if([library parseLibrary]) {
-        for (id song in library.Songs) {
-            NSLog(@"[%@] %@", [song getAttribute:@"Track ID"], [song getAttribute:@"Name"]);
+    STAssertEquals([library parseLibrary], YES, nil);
+}
+
+//
+//Given an invalid NSURL pointing to an incorrect location, -parseLibrary will return NO
+//
+- (void)testLocationInvalid
+{
+    NSURL *url = [NSURL fileURLWithPath:@"/Users/matt/Music/foo/iTunes Music Library.xml"];
+    Library *library = [[Library alloc] initWithLibrary:url];
+
+    STAssertEquals([library parseLibrary], NO, nil);
+}
+
+//
+//Checks that the Song objects in library.Songs are returning < 0 attributes
+//
+- (void)testIfSongsHaveAttributes
+{
+    NSURL *url = [NSURL fileURLWithPath:@"/Users/matt/Music/iTunes/iTunes Music Library.xml"];
+    Library *library = [[Library alloc] initWithLibrary:url];
+    
+    for (Song *song in library.Songs) {
+        if([song.SongAttributes count] == 0) {
+            STFail(@"No attributes for Song!");
         }
     }
 }

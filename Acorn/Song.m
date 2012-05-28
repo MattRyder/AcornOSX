@@ -10,14 +10,14 @@
 
 @implementation Song
 
-@synthesize AttributeKeys = _attributeKeys;
-@synthesize SongAttributes = _songAttributes;
+@synthesize AttributeKeys = attributeKeys;
+@synthesize SongAttributes = songAttributes;
 
 - (id) init {
     if(self = [super init]) {
         
         //Use this to check if an attribute is being indexed by Acorn:
-        _attributeKeys = [[NSArray alloc] initWithObjects: @"Track ID", @"Name", @"Artist", @"Album Artist", 
+        attributeKeys = [[NSArray alloc] initWithObjects: @"Track ID", @"Name", @"Artist", @"Album Artist", 
                        @"Album", @"Genre", @"Kind", @"Size", @"Total Time", @"Track Number",
                        @"Track Count", @"Year", @"Date Modified", @"Date Added", @"Bit Rate",
                        @"Sample Rate", @"Comments", @"Skip Count", @"Skip Date", @"Persistent ID", 
