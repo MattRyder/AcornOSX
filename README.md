@@ -1,5 +1,5 @@
-# AcornOSX - (https://github.com/MattRyder/AcornOSX)
-A Cocoa Library for parsing "iTunes Music Library.xml" files
+# AcornOSX
+A Cocoa Library for parsing "iTunes Music Library.xml" files - (https://github.com/MattRyder/AcornOSX)
 
 ####To Build:
 - Open AcornOSX.xcodeproj into XCode
